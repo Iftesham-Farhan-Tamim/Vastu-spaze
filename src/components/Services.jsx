@@ -11,15 +11,13 @@ function Services() {
                 {SERVICES_CONTENT.map((service, index) => (
                     <div key={index} className="mb-12 mx-4 flex flex-col 
                     lg:flex-row md:p-8">
-                        <div className={`lg:w-1/2 mb-4 lg:mb-0 ${
-                            index % 2 === 0 ? "" : "lg:order-2"
-                        }`}>
-                            <img src={service.image} alt={service.title} 
-                            className="w-full h-auto object-cover rounded-lg" />
+                        <div className={`lg:w-1/2 mb-4 lg:mb-0 ${index % 2 === 0 ? "" : "lg:order-2"
+                            }`}>
+                            <img src={service.image} alt={service.title}
+                                className="w-full h-auto object-cover rounded-lg" />
                         </div>
-                        <div className={`lg:w-1/2 flex flex-col ${
-                            index % 2 === 0 ? "lg:pl-12" : "lg:pr-12"
-                        }`}>
+                        <div className={`lg:w-1/2 flex flex-col ${index % 2 === 0 ? "lg:pl-12" : "lg:pr-12"
+                            }`}>
                             <h3 className="text-xl lg:text-2xl font-medium mb-2">
                                 {service.title}
                             </h3>
